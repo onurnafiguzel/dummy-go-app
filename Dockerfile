@@ -3,7 +3,7 @@ WORKDIR /app
 ADD go.mod .
 ADD go.sum .
 RUN go mod download
-COPY main.go ./
+COPY main.go .
 EXPOSE 8081
 RUN go build -o /app
 CMD ["/app"]
