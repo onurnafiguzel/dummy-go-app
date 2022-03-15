@@ -9,7 +9,7 @@ RUN go mod download
 
 COPY *.go ./
 
-EXPOSE 8081
+EXPOSE 8080
 
 RUN go build -o /dummy-go-app
 
