@@ -1,4 +1,4 @@
-FROM golang:1.16-alphine
+FROM golang:1.16-alpine
 WORKDIR /app
 ADD . .
 RUN go.mod download
